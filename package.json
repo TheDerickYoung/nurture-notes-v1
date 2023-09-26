@@ -1,0 +1,28 @@
+{
+  "name": "nurture-notes",
+  "version": "1.0.0",
+  "description": "This app makes it simple to record and share essential information about your baby's health, like medications, temperature, and important notes. It's a hassle-free way to keep track of everything during illnesses, ensuring smooth teamwork among parents, family, and babysitters.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Derick Young Jr.",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  }
+}
